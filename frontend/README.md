@@ -1,16 +1,78 @@
-# React + Vite
+# Feedify-AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern mobile application for collecting student feedback with premium UI design and intelligent features.
 
-Currently, two official plugins are available:
+## 🎨 Design System
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Theme:** Soft blue-to-purple gradient (`#4F8CFF` → `#6A5CFF`)  
+**Style:** Premium SaaS aesthetic with glassmorphism and soft shadows  
+**Framework:** React + Vite + Tailwind CSS  
 
-## React Compiler
+## 📱 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✨ Student feedback flow (Dashboard → Form → Submission)
+- 🎯 Real-time search & filtering
+- 📊 Multiple rating types (stars, emojis)
+- 💾 Draft saving capability
+- 🎉 Success animations (confetti)
+- 📱 Mobile-first responsive design
+- 🌓 Modern UI components (Card, Badge, Avatar, Logo)
 
-## Expanding the ESLint configuration
+## 🚀 Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## 📂 Documentation
+
+Detailed design documentation is available in the `docs/` folder:
+
+- [**Design Guide**](docs/DESIGN_GUIDE.md) - Component architecture & usage
+- [**Theme Upgrade**](docs/THEME_UPGRADE.md) - Color palette & visual improvements
+- [**UI Improvements**](docs/UI_IMPROVEMENTS.md) - Feature overview & new components
+- [**Visual Hierarchy**](docs/VISUAL_HIERARCHY.md) - Layout patterns & spacing system
+- [**Quickstart**](docs/QUICKSTART.md) - Getting started guide
+
+## 🛠️ Tech Stack
+
+- **React 19** - UI library
+- **Vite 7** - Build tool with HMR
+- **Tailwind CSS 3** - Utility-first styling
+- **Lucide React** - Modern icon library
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── ui/              # Reusable UI primitives
+│   ├── feedback/        # Feedback-specific components
+│   └── ...              # Other components
+├── pages/
+│   └── student/         # Student flow screens
+├── screens/             # Other tab screens
+└── App.jsx              # Main application
+```
+
+## 🎨 Component Library
+
+- **Card** - Premium card component with header, content, footer
+- **Badge** - Status indicators (10 variants)
+- **Avatar** - User avatars with initials fallback
+- **Button** - Primary, secondary, ghost variants
+- **Logo** - Feedify-AI branding component
+- **RatingInput** - Star & emoji ratings
+- **FormField** - Universal form input (8 types)
+- **FeedbackCard** - Course/form cards with status
+
+---
+
+Made with 💙💜 for Feedify-AI
